@@ -1,0 +1,39 @@
+RAG Evaluation — Hybrid Retrieval + Cross-Encoder Reranking
+
+Retrieval Strategy:
+BM25 + Dense Retrieval followed by Cross-Encoder Reranking
+
+Candidate Retrieval:
+Hybrid Retrieval Top-6
+
+Final Retrieval:
+Reranked Top-3
+
+Reranker:
+cross-encoder/ms-marco-MiniLM-L-6-v2
+
+Evaluation Questions:
+50
+
+Correct:
+50/50
+
+Recall@3:
+100.00%
+
+Comparison:
+Fixed Dense Retrieval: 49/50 (98.00%)
+Structure-Aware Semantic Chunking: 50/50 (100.00%)
+Hybrid BM25 + Dense: 48/50 (96.00%)
+Hybrid + Cross-Encoder Reranking: 50/50 (100.00%)
+
+Failure Analysis:
+The hybrid retrieval configuration produced two failures
+(Q40 and Q47). Cross-encoder reranking successfully recovered
+both expected sources within the final top-3 results.
+
+Notes:
+Reranking improved the hybrid pipeline from 96.00% to 100.00%
+Recall@3 on the evaluation set. This demonstrates the value of
+a second-stage relevance model for correcting the initial
+retrieval ranking.
