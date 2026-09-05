@@ -1,0 +1,52 @@
+[
+  {
+    "question": "How many weeks of parental leave are employees eligible for?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Employees are eligible for 16 weeks of parental leave."
+  },
+  {
+    "question": "How many days of annual leave do full-time employees receive?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Full-time employees receive 24 days of paid annual leave."
+  },
+  {
+    "question": "How many days of paid sick leave can employees take per year?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Employees may take up to 12 days of paid sick leave per year."
+  },
+  {
+    "question": "How many days per week can employees work remotely?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Employees may work remotely up to 3 days per week with manager approval."
+  },
+  {
+    "question": "How many times per year are performance reviews conducted?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Performance reviews are conducted twice each year."
+  },
+  {
+    "question": "When should employees normally submit expense claims?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Expense claims should normally be submitted within 30 days after returning from a business trip."
+  },
+  {
+    "question": "What are the standard working hours?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "The standard working hours are 9:00 AM to 6:00 PM, Monday through Friday."
+  },
+  {
+    "question": "How many working hours are employees expected to complete per day?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Employees are expected to complete 8 working hours per day."
+  },
+  {
+    "question": "How many consecutive working days of sick leave may require documentation?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Sick leave lasting more than 3 consecutive working days may require documentation."
+  },
+  {
+    "question": "Can parental leave be divided into multiple periods?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "Yes, parental leave may be divided into multiple periods subject to manager approval."
+  }
+]

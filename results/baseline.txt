@@ -1,0 +1,24 @@
+RAG Evaluation — Baseline
+
+Retrieval Strategy:
+Simple Fixed-Size Chunking + Dense Retrieval
+
+Embedding Model:
+all-MiniLM-L6-v2
+
+Top-K:
+3
+
+Evaluation Questions:
+10
+
+Correct:
+10
+
+Recall@3:
+100%
+
+Notes:
+This is an initial baseline evaluation on a small HR policy
+document set. The dataset will be expanded before comparing
+retrieval strategies.
