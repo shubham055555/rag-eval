@@ -1,0 +1,13 @@
+INFORMATION SECURITY POLICY
+
+Employees must protect company credentials and must not share passwords with other employees.
+
+Multi-factor authentication must be enabled for systems that support it.
+
+Company data should only be accessed through authorized systems.
+
+Employees must report suspected security incidents to the security team as soon as possible.
+
+Sensitive company information must not be stored on unauthorized personal devices.
+
+Company laptops should be locked whenever employees leave their workstation.

@@ -1,52 +1,252 @@
 [
   {
     "question": "How many weeks of parental leave are employees eligible for?",
-    "expected_source": "employee_handbook.txt",
+    "expected_source": "leave_policy.txt",
     "expected_answer": "Employees are eligible for 16 weeks of parental leave."
   },
   {
-    "question": "How many days of annual leave do full-time employees receive?",
-    "expected_source": "employee_handbook.txt",
-    "expected_answer": "Full-time employees receive 24 days of paid annual leave."
+    "question": "Can parental leave be divided into multiple periods?",
+    "expected_source": "leave_policy.txt",
+    "expected_answer": "Yes, subject to manager approval."
   },
   {
-    "question": "How many days of paid sick leave can employees take per year?",
-    "expected_source": "employee_handbook.txt",
-    "expected_answer": "Employees may take up to 12 days of paid sick leave per year."
+    "question": "How many days of annual leave does a full-time employee receive?",
+    "expected_source": "leave_policy.txt",
+    "expected_answer": "24 days of paid annual leave."
+  },
+  {
+    "question": "When should annual leave normally be requested?",
+    "expected_source": "leave_policy.txt",
+    "expected_answer": "At least 3 working days before the planned leave."
+  },
+  {
+    "question": "How many days of paid sick leave are available each year?",
+    "expected_source": "leave_policy.txt",
+    "expected_answer": "Up to 12 days."
+  },
+  {
+    "question": "When can sick leave documentation be required?",
+    "expected_source": "leave_policy.txt",
+    "expected_answer": "For sick leave lasting more than 3 consecutive working days."
+  },
+  {
+    "question": "What type of leave may employees request for exceptional personal circumstances?",
+    "expected_source": "leave_policy.txt",
+    "expected_answer": "Unpaid leave."
+  },
+  {
+    "question": "Who must approve unpaid leave?",
+    "expected_source": "leave_policy.txt",
+    "expected_answer": "Approval depends on business requirements and manager approval."
   },
   {
     "question": "How many days per week can employees work remotely?",
-    "expected_source": "employee_handbook.txt",
-    "expected_answer": "Employees may work remotely up to 3 days per week with manager approval."
+    "expected_source": "remote_work_policy.txt",
+    "expected_answer": "Up to 3 days per week."
   },
   {
-    "question": "How many times per year are performance reviews conducted?",
-    "expected_source": "employee_handbook.txt",
-    "expected_answer": "Performance reviews are conducted twice each year."
+    "question": "Is manager approval required for remote work?",
+    "expected_source": "remote_work_policy.txt",
+    "expected_answer": "Yes."
   },
   {
-    "question": "When should employees normally submit expense claims?",
-    "expected_source": "employee_handbook.txt",
-    "expected_answer": "Expense claims should normally be submitted within 30 days after returning from a business trip."
+    "question": "What must remote employees attend?",
+    "expected_source": "remote_work_policy.txt",
+    "expected_answer": "Scheduled meetings and required collaboration activities."
   },
   {
-    "question": "What are the standard working hours?",
-    "expected_source": "employee_handbook.txt",
-    "expected_answer": "The standard working hours are 9:00 AM to 6:00 PM, Monday through Friday."
+    "question": "What must employees use when working remotely?",
+    "expected_source": "remote_work_policy.txt",
+    "expected_answer": "Company-approved devices and secure network connections."
   },
   {
-    "question": "How many working hours are employees expected to complete per day?",
-    "expected_source": "employee_handbook.txt",
-    "expected_answer": "Employees are expected to complete 8 working hours per day."
+    "question": "Can remote work arrangements be changed?",
+    "expected_source": "remote_work_policy.txt",
+    "expected_answer": "Yes, based on business requirements."
   },
   {
-    "question": "How many consecutive working days of sick leave may require documentation?",
-    "expected_source": "employee_handbook.txt",
-    "expected_answer": "Sick leave lasting more than 3 consecutive working days may require documentation."
+    "question": "What expenses can employees claim during approved business travel?",
+    "expected_source": "travel_expense_policy.txt",
+    "expected_answer": "Eligible transportation, accommodation, and meal expenses."
   },
   {
-    "question": "Can parental leave be divided into multiple periods?",
+    "question": "Who normally approves business travel?",
+    "expected_source": "travel_expense_policy.txt",
+    "expected_answer": "The employee's manager."
+  },
+  {
+    "question": "How long after a business trip should expense claims normally be submitted?",
+    "expected_source": "travel_expense_policy.txt",
+    "expected_answer": "Within 30 days after returning."
+  },
+  {
+    "question": "Are personal expenses reimbursable?",
+    "expected_source": "travel_expense_policy.txt",
+    "expected_answer": "No."
+  },
+  {
+    "question": "Why should employees choose reasonable travel options?",
+    "expected_source": "travel_expense_policy.txt",
+    "expected_answer": "Travel options should be reasonable and cost-effective."
+  },
+  {
+    "question": "Should receipts be retained for reimbursable expenses?",
+    "expected_source": "travel_expense_policy.txt",
+    "expected_answer": "Yes."
+  },
+  {
+    "question": "Can employees share their passwords?",
+    "expected_source": "security_policy.txt",
+    "expected_answer": "No."
+  },
+  {
+    "question": "What authentication requirement applies to supported systems?",
+    "expected_source": "security_policy.txt",
+    "expected_answer": "Multi-factor authentication must be enabled."
+  },
+  {
+    "question": "Where should company data be accessed from?",
+    "expected_source": "security_policy.txt",
+    "expected_answer": "Authorized systems."
+  },
+  {
+    "question": "What should employees do after discovering a suspected security incident?",
+    "expected_source": "security_policy.txt",
+    "expected_answer": "Report it to the security team as soon as possible."
+  },
+  {
+    "question": "Can sensitive company information be stored on unauthorized personal devices?",
+    "expected_source": "security_policy.txt",
+    "expected_answer": "No."
+  },
+  {
+    "question": "What should employees do when leaving their workstation?",
+    "expected_source": "security_policy.txt",
+    "expected_answer": "Lock their company laptop."
+  },
+  {
+    "question": "How frequently are performance reviews conducted?",
+    "expected_source": "performance_policy.txt",
+    "expected_answer": "Twice each year."
+  },
+  {
+    "question": "Who can provide feedback during performance evaluations?",
+    "expected_source": "performance_policy.txt",
+    "expected_answer": "Managers and peers."
+  },
+  {
+    "question": "What factors are considered during performance evaluations?",
+    "expected_source": "performance_policy.txt",
+    "expected_answer": "Job responsibilities, quality of work, collaboration, and achievement of objectives."
+  },
+  {
+    "question": "Can employees discuss their performance evaluation results?",
+    "expected_source": "performance_policy.txt",
+    "expected_answer": "Yes, with their manager."
+  },
+  {
+    "question": "What should managers provide after evaluating employees?",
+    "expected_source": "performance_policy.txt",
+    "expected_answer": "Actionable feedback and professional development areas."
+  },
+  {
+    "question": "Who is eligible for the standard employee benefits package?",
+    "expected_source": "benefits_policy.txt",
+    "expected_answer": "Full-time employees."
+  },
+  {
+    "question": "What types of benefits may employees receive?",
+    "expected_source": "benefits_policy.txt",
+    "expected_answer": "Health coverage, retirement contributions, and employee assistance programs."
+  },
+  {
+    "question": "When should employees review benefit enrollment requirements?",
+    "expected_source": "benefits_policy.txt",
+    "expected_answer": "During the designated enrollment period."
+  },
+  {
+    "question": "Who should receive changes to personal employee information?",
+    "expected_source": "benefits_policy.txt",
+    "expected_answer": "The appropriate HR department."
+  },
+  {
+    "question": "What can determine eligibility for individual benefits?",
+    "expected_source": "benefits_policy.txt",
+    "expected_answer": "Employment status and applicable plan rules."
+  },
+  {
+    "question": "How should employees behave toward colleagues and customers?",
+    "expected_source": "code_of_conduct.txt",
+    "expected_answer": "Professionally and respectfully."
+  },
+  {
+    "question": "What workplace behaviors are prohibited?",
+    "expected_source": "code_of_conduct.txt",
+    "expected_answer": "Harassment, discrimination, intimidation, and retaliation."
+  },
+  {
+    "question": "What should employees do about potential conflicts of interest?",
+    "expected_source": "code_of_conduct.txt",
+    "expected_answer": "Disclose them to their manager or appropriate company representative."
+  },
+  {
+    "question": "How should company resources be used?",
+    "expected_source": "code_of_conduct.txt",
+    "expected_answer": "Responsibly and primarily for authorized business purposes."
+  },
+  {
+    "question": "What information must employees protect?",
+    "expected_source": "code_of_conduct.txt",
+    "expected_answer": "Confidential company information."
+  },
+  {
+    "question": "What are the normal working hours?",
     "expected_source": "employee_handbook.txt",
-    "expected_answer": "Yes, parental leave may be divided into multiple periods subject to manager approval."
+    "expected_answer": "9:00 AM to 6:00 PM, Monday through Friday."
+  },
+  {
+    "question": "How many working hours are expected per day?",
+    "expected_source": "employee_handbook.txt",
+    "expected_answer": "8 working hours."
+  },
+  {
+    "question": "What is the maximum remote work allowance?",
+    "expected_source": "remote_work_policy.txt",
+    "expected_answer": "Up to 3 days per week."
+  },
+  {
+    "question": "How long can parental leave last?",
+    "expected_source": "leave_policy.txt",
+    "expected_answer": "16 weeks."
+  },
+  {
+    "question": "How soon should a security incident be reported?",
+    "expected_source": "security_policy.txt",
+    "expected_answer": "As soon as possible."
+  },
+  {
+    "question": "What is the deadline for submitting business travel expenses?",
+    "expected_source": "travel_expense_policy.txt",
+    "expected_answer": "Within 30 days after returning from the trip."
+  },
+  {
+    "question": "How often does the company conduct employee performance reviews?",
+    "expected_source": "performance_policy.txt",
+    "expected_answer": "Twice each year."
+  },
+  {
+    "question": "Which employees qualify for standard benefits?",
+    "expected_source": "benefits_policy.txt",
+    "expected_answer": "Full-time employees."
+  },
+  {
+    "question": "What workplace conduct is not allowed?",
+    "expected_source": "code_of_conduct.txt",
+    "expected_answer": "Harassment, discrimination, intimidation, and retaliation."
+  },
+  {
+    "question": "What should employees do with confidential company information?",
+    "expected_source": "code_of_conduct.txt",
+    "expected_answer": "Employees are expected to protect confidential company information."
   }
 ]

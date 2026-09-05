@@ -9,16 +9,19 @@ all-MiniLM-L6-v2
 Top-K:
 3
 
+Documents:
+8
+
 Evaluation Questions:
-10
+50
 
 Correct:
-10
+49/50
 
 Recall@3:
-100%
+98.00%
 
 Notes:
-This is an initial baseline evaluation on a small HR policy
-document set. The dataset will be expanded before comparing
-retrieval strategies.
+Initial baseline using fixed-size chunking and dense retrieval.
+One of 50 evaluation queries failed to retrieve the expected
+source within the top 3 results.
