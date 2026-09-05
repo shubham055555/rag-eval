@@ -1,0 +1,49 @@
+RAG Evaluation — Hybrid Search
+
+Retrieval Strategy:
+BM25 Keyword Retrieval + Dense Semantic Retrieval
+
+Embedding Model:
+all-MiniLM-L6-v2
+
+Hybrid Weight:
+alpha = 0.5
+Dense = 50%
+BM25 = 50%
+
+Top-K:
+3
+
+Documents:
+8
+
+Evaluation Questions:
+50
+
+Correct:
+48/50
+
+Recall@3:
+96.00%
+
+Comparison:
+Fixed Dense Retrieval: 49/50 (98.00%)
+Structure-Aware Semantic Chunking: 50/50 (100.00%)
+Hybrid BM25 + Dense: 48/50 (96.00%)
+
+Failure Analysis:
+Two evaluation queries failed to retrieve the expected
+source within the top 3 results.
+
+Q40 expected:
+code_of_conduct.txt
+
+Q47 expected:
+performance_policy.txt
+
+Notes:
+The initial equal-weight hybrid configuration did not outperform
+dense retrieval or structure-aware semantic chunking on this
+evaluation set. This demonstrates that hybrid retrieval requires
+careful score normalization and weight tuning rather than assuming
+that combining retrieval methods will automatically improve results.
