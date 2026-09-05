@@ -1,0 +1,34 @@
+RAG Evaluation — Semantic Chunking
+
+Retrieval Strategy:
+Structure-Aware Semantic Chunking + Dense Retrieval
+
+Embedding Model:
+all-MiniLM-L6-v2
+
+Top-K:
+3
+
+Documents:
+8
+
+Evaluation Questions:
+50
+
+Correct:
+50/50
+
+Recall@3:
+100.00%
+
+Baseline Comparison:
+Simple Fixed-Size Chunking: 49/50 (98.00%)
+Semantic Chunking: 50/50 (100.00%)
+
+Improvement:
++2.00 percentage points
+
+Notes:
+Semantic/structure-aware chunking improved retrieval performance
+on the evaluation set by preserving paragraph and policy-section
+boundaries.
