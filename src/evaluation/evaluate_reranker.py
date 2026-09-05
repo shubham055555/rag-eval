@@ -9,6 +9,7 @@ from src.retrieval.reranker import retrieve_and_rerank
 
 QUESTIONS_PATH = "data/evaluation/questions.json"
 TOP_K = 3
+MIN_RECALL = 0.95
 
 with open(QUESTIONS_PATH, "r", encoding="utf-8") as f:
     questions = json.load(f)
@@ -17,17 +18,18 @@ correct = 0
 failures = []
 
 print("\n========================================")
-print("RERANKER EVALUATION")
+print("RERANKER CI EVALUATION")
 print("========================================")
 print(f"Questions: {len(questions)}")
 print(f"Top-K: {TOP_K}")
+print(f"Minimum Recall@{TOP_K}: {MIN_RECALL:.2%}")
 
 for index, item in enumerate(questions, start=1):
 
     query = item["question"]
     expected_source = item["expected_source"]
 
-    results = retrieve_and_rerank(query)
+    results = retrieve_and_rerank(query,)
 
     retrieved_sources = [
         result["source"]
@@ -56,14 +58,20 @@ for index, item in enumerate(questions, start=1):
 recall = correct / len(questions)
 
 print("\n========================================")
-print("FINAL RERANKER RESULT")
+print("FINAL CI RESULT")
 print("========================================")
 print(f"Correct: {correct}/{len(questions)}")
 print(f"Recall@{TOP_K}: {recall:.2%}")
-print(f"Failures: {len(failures)}")
-print("========================================")
+print(f"Required: {MIN_RECALL:.2%}")
 
-if failures:
+if recall >= MIN_RECALL:
+    print("STATUS: PASS")
+    print("========================================")
+    sys.exit(0)
+else:
+    print("STATUS: FAIL")
+    print("========================================")
+
     print("\nFAILURE ANALYSIS")
 
     for failure in failures:
@@ -74,3 +82,5 @@ if failures:
         print(failure["expected"])
         print("\nRetrieved:")
         print(failure["retrieved"])
+
+    sys.exit(1)
